@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static',filename='styles.css') }}">
+    <title>PC Parts</title>
+</head>
+<body>
+<h3>The current time is {{ datetime }}</h3> <!-- displays the current time -->
+<nav id="sitenav"> <!-- displays a page navigation menu at the top of the page -->
+    <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/parts">Parts</a></li>
+        <li><a href="/FAQ">FAQ</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">Login</a></li>
+    </ol>
+</nav>
+<h1>Here is a guide to all the parts your PC needs</h1>
+
+<h2>CPU
+</h2>
+<div id="CPU">
+        <img src="/static/images/cpu.jpeg">
+    </div>
+<p>
+
+    The central-processing unit, or CPU, is the brain of the PC. The CPU processes
+    and executes instructions for the hardware and software running on the PC.There
+    are plenty of processors to choose from, but before you start building, you'll have
+    to choose if you want an AMD or an Intel processor. This choice defines which motherboard
+    you will have to get.<br><br>You can learn more about AMD and Intel processors through these
+    websites:
+    <ul>
+    <li><a href="https://www.amd.com/en/products/processors/desktops/ryzen.html" target="_blank">AMD</a></li>
+    <li><a href="https://www.intel.com/content/www/us/en/products/details/processors/core.html"
+           target="_blank">Intel</a></li>
+    </ul>
+</p>
+<h2>Motherboard
+
+</h2>
+<div id="mobo">
+    <img src="/static/images/motherboard.jpeg">
+</div>
+<p>
+    The motherboard of a PC helps connect all the parts together so that they can communicate
+    with each other. The motherboard also helps distribute power from the power supply to each component.
+    The motherboard also helps define types of storage devices and memory. It also aids in the installation
+    of the operating system on your machine. Some motherboards have extra features that is available to those
+    that wish to push the performance of their machine to the max and much more. There are plenty of motherboards
+    to choose from, but whichever motherboard you choose you'll want to make sure it is compatible with your
+    CPU.
+</p>
+<h2>GPU</h2>
+<div id="gpu">
+    <img src="/static/images/gpu.jpeg">
+</div>
+<p>
+    The graphics-processing unit or GPU in your PC helps handle graphics, effects, videos, and other processes
+    of that nature. Some CPU's that you can purchase have built in graphics, so a GPU is not always necessary in
+    a machine. However, if you wish to have a PC that is higher performance, and you'll be using it to do video
+    editing, gaming, or other higher intensity tasks, you'll want to look into getting a graphics card for your machine.
+    <br><br>You can learn more about graphics cards using these links:
+    <ul>
+    <li><a href="https://www.amd.com/en/products/graphics/desktops/radeon.html" target="_blank">AMD Radeon</a></li>
+    <li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/" target="_blank">NVIDIA GeForce</a></li>
+    </ul>
+</p>
+<h2>Memory</h2>
+<div id="ram">
+    <img src="/static/images/ram.jpeg">
+</div>
+<p>
+    Memory, or random access memory(RAM) stores data while the computer runs. When a computer needs to access
+    data quickly, it uses memory to do so. Processes that use memory include loading applications,
+    browsing the internet, playing video games, editing word documents, and so on. The amount of memory you need
+    varies depending on the kind of system you are building. For general office use you may only need 8GB of RAM. If
+    you plan on gaming, you may need 16GB or more.
+</p>
+<h2>Storage</h2>
+<p>
+    There are two different types of storage devices you can add to your system. One of these devices is called
+    a hard disk drive or HDD, the other is called a solid state drive or SSD. HDDs and SSDs come with their
+    own pros and cons.
+</p>
+<h3 id="TableHeader">
+    HDD                                                                                       SSD
+</h3>
+<table>
+    <tr>
+        <!-- Table header (HDD) -->
+        <th>Pros</th>
+        <th>Cons</th>
+    </tr>
+        <!-- First row -->
+    <tr>
+        <td>Cheaper than SSDs</td> <!-- First column -->
+        <td>Generally fails a lot sooner</td> <!-- Second column -->
+    </tr>
+        <!-- Second row -->
+    <tr>
+        <td>More storage capacity</td> <!-- First column -->
+        <td>Takes up more space inside a system</td> <!-- Second column-->
+
+    </tr>
+        <!-- Third row -->
+    <tr>
+        <td>More accessibility</td> <!-- First column -->
+        <td>Not energy efficient</td> <!-- Second column -->
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <!-- Table Header (SDD) -->
+        <th>Pros</th>
+        <th>Cons</th>
+    </tr>
+        <!-- First row -->
+    <tr>
+        <td>Fast read and write speeds</td> <!-- First column -->
+        <td>Limited life span</td> <!-- Second column -->
+    </tr>
+        <!-- Second row -->
+    <tr>
+        <td>No moving parts</td> <!-- First column -->
+        <td>More expensive</td> <!-- Second column -->
+    </tr>
+        <!-- Third row -->
+    <tr>
+        <td>Smaller. Takes up less space</td> <!-- First column -->
+        <td>Difficult data recovery</td> <!-- Second column -->
+    </tr>
+
+</table>
+<h2>Power Supply</h2>
+<p>
+    The power supply in a PC provides power to all the components in the system. The most important
+    part about deciding on a power supply is making sure you get the right wattage. How much power
+    you need for your system depends on the components that you have inside. Newegg has a great tool that
+    takes into account the parts you have in your machine, and calculates the necessary wattage based
+    on that. <br>You can find this tool here:
+    <a href="https://www.newegg.com/tools/power-supply-calculator?cm_sp=NeweggInsider-_-BuyingGuides-_-ChoosePSU"
+       target="_blank">
+        Newegg Power Supply Calculator
+    </a>
+</p>
+<h2>Operating System</h2>
+<p>
+    In order to run your PC, you'll need an operating system to navigate through your system. An operating system,
+    or OS, plays an important role in managing the computer's memory and processes, as well as all of its
+    software and hardware. There are two different operating systems to choose from. If you want to go with the
+    free option, Linux is an excellent choice. There are an exceptional amount of distributions to choose
+    from when it comes to Linux however, and it isn't the most compatible OS for gaming. The other option for
+    an OS is Windows. Windows is the most common OS for desktops as it has a lot of compatibility with a great deal
+    of programs as well as gaming. Windows, however, you do have to pay for so do keep that in mind when making
+    your decision.
+</p>
+<h2>Cooling</h2>
+<p>
+    Cooling is an important part of a PC build as well. The components inside a PC generate a lot of heat,
+    especially the CPU and GPU, so it is important to have a solution to keeping the inside of your
+    system cool to prevent overheating. There are two ways you can choose to keep your system cool which includes
+    either water cooling or making use of plenty of fans. With fans, you have to take into account what kind you'll need
+    for your CPU and where you can place extra fans within your PC case. Some CPUs come with a fan that you can install,
+    however with higher performance CPUs you will most likely need to buy a higher performance fan as a result. GPUs
+    normally already have fans attached to them, so it's not usually necessary to buy fans for that component. To
+    increase airflow in your system, you'll also want to attach fans to the front back and sometimes the top of your
+    case. Water cooling a PC tends to be a more complicated and more expensive process but the payoff is fantastic.
+    With water cooling, your PC runs a lot cooler than it would with fans, and since you don't have many fans running
+    in your system, your PC runs a lot quieter as a result. Water cooling requires a lot of different parts to install,
+    however. These parts include a radiator with fans to move heat from liquid into air, a water block to transfer
+    heat into liquid, a pump to move the liquid, and a reservoir for automatically filtering air from the liquid
+    and storing excess coolant.
+</p>
+<h2>PC Case</h2>
+<p>
+    A PC case helps hold all the components of your system. The size of the case you need depends on the parts
+    that you get. If you're building a high performance gaming rig, you probably need a bigger case to handle
+    the size of the graphics card and cooling. Air flow is also another factor to consider in choosing a case. A lot
+    of cases come with fans which can help cut down on the cost of having to buy more fans to install. If you
+    are building a high performance rig, it can be helpful to choose a case that has a lot of places
+    for you to install fans in your system. Computer case sizes are typically based on the type of motherboard you get,
+    so when choosing your case, make sure it's compatible with your motherboard size.
+</p>
+</body>
+</html>

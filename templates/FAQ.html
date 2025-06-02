@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static',filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+</head>
+<body>
+<h3>The current time is {{ datetime }}</h3> <!-- displays the current time -->
+<nav id="sitenav"> <!-- displays a page navigation menu at the top of the page -->
+    <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/parts">Parts</a></li>
+        <li><a href="/FAQ">FAQ</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">Login</a></li>
+    </ol>
+</nav>
+<h1>Frequently Asked Questions</h1>
+<br>
+<h2>Is there an easy way to pick out parts for my PC?</h2>
+<p>
+    There are plenty of websites out there that let you pick out parts for your PC, but my favorite
+    is <a href="https://pcpartpicker.com" target="_blank">PC part picker.</a> When you pick out your parts, it takes
+    into account if the parts are compatible with each other and even provides a wattage estimate
+    to help you decide on which power supply you should choose.
+</p>
+<h2>How much RAM do I need?</h2>
+<p>
+    That depends on what you intend to use your machine for. For general office use you can get away with only having
+    8 GB of RAM. For gaming, a minimum of 16GB is recommended to keep up with most modern games. If you plan to do
+    more than just gaming, and multi-task a lot, you may want to consider 32GB of RAM.
+</p>
+<h2>What are the price points for gaming rigs?</h2>
+<p>
+    Price points can vary depending on the parts you get and if you're willing to sacrifice spending less on some parts
+    to be able to spend more on others, but here is a rough estimate of what you'll need at each level based on
+    graphics settings and resolutions.
+    <ul>
+        <li>Budget(1080p high settings): $700-$800</li>
+        <li>1080p ultra settings: $1000-$1200</li>
+        <li>1440p ultra settings: $1500</li>
+    </ul>
+    <p>Anything higher than $1500 can generally run just about any game with the highest settings and resolutions</p>
+</p>
+<h2>Am I better off getting a pre-built machine?</h2>
+<p>
+    Depending on how you plan to use your machine, it can be more beneficial to just buy a pre-built PC. Unless you
+    intend to use your computer for more than just office use, or you want to learn how to build a computer, you normally
+    would probably just want to buy a PC that is already put together. Even for gaming, there are plenty of high quality
+    pre-built machines out there ready for use right out of the box. Generally, if you're interested in learning about
+    how to build a PC, wish to have more control over what parts go into the PC, or you plan to build your PC to upgrade
+    in the future, that's when you'd want to build your own machine.
+</p>
+<h2>What kind of peripherals do I need?</h2>
+<p>
+    For every PC, you generally want to have a monitor, a mouse, a keyboard, and some way to output sound which can
+    either be speakers or headphones. Some monitors come with speakers built in already, so that may be something
+    you want to consider.
+</p>
+<h2>What kind of monitor should I get for gaming?</h2>
+<p>
+    For gaming, you generally want a monitor with a high refresh rate and high resolution. For an intro to gaming with
+    a low price you can get away with a 1080p monitor with a 160hz refresh rate and still get good visuals. If you want
+    to have a better visual experience, a monitor with a 1440p resolution and 240hz is an excellent place to start. The
+    best visual experience would be a monitor with 4K resolution and refresh rate of 240hz or more.
+</p>
+</body>
+</html>

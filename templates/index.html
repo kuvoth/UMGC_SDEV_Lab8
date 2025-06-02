@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static',filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <title>PC Building</title>
+</head>
+<body>
+<h3>The current time is {{ datetime }}</h3> <!-- displays the current time -->
+<nav id="sitenav"> <!-- displays a page navigation menu at the top of the page -->
+    <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/parts">Parts</a></li>
+        <li><a href="/FAQ">FAQ</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">Login</a></li>
+    </ol>
+</nav>
+<h1>Building a PC</h1>
+<div id="pc">
+    <img src="/static/images/PC.jpeg">
+</div>
+<p>
+    There are many aspects to think about when building a PC. While the task itself may seem
+    a little daunting, building a PC can be a fun challenge to overcome and can help
+    you understand quite a bit more about the machine you are using. Before getting started, there
+    are a few things you may want to consider.
+</p>
+<h2>Budget</h2>
+<p>
+    What is the overall budget for this machine? If you only need to build a PC for general office
+    use, you won't need to spend as much money on parts. If you want to be able to do things like
+    video/photo editing, gaming, etc. you may need to spend more money on higher performance parts,
+    peripherals, and accessories.
+</p>
+<h2>Parts</h2>
+<p>
+    There are quite a few parts that go into building a PC. Depending on what you intend
+    to use the machine for, the kind of parts that you get will vary.The essential
+    parts of a PC, however, are as follows:
+</p>
+<ul>
+    <li>CPU</li>
+    <li>Motherboard</li>
+    <li>GPU</li>
+    <li>Memory</li>
+    <li>Storage</li>
+    <li>Power Supply</li>
+    <li>Operating System(OS)</li>
+    <li>Cooling</li>
+    <li>PC Case</li>
+</ul>
+<h2>Tools</h2>
+<p>
+    PC building isn't as complicated as working on your car. But just like any task that
+    requires putting things together and taking them apart, you will need the right tools
+    for the job.For PC building, the most useful thing you will need is a screwdriver.
+    You will need to get in some hard to reach places, however, so make sure that you invest
+    in a magnetic tipped screwdriver with a long shaft. A standard Phillips head #2 will work
+    with all screws in a PC. It's very rare that you will be dealing with any screws bigger or smaller
+    than the standard size.<br><br>These other tools aren't necessary, but you may find useful to have:
+</p>
+<ul>
+    <li>Scissors or a knife for opening packaging</li>
+    <li>Cable ties for cable management</li>
+    <li>Magnetic dish for keeping track of screws</li>
+    <li>Anti-Static Wristband</li>
+</ul>
+</body>
+</html>
